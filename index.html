@@ -5,10 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+	<title>Georgia Tech Coding Boot Camp</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/custom.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -27,11 +28,14 @@
 	<div class="reveal">
 		<div class="slides">
 
-
 			<section>
-				<h3>Why Me?</h3>
+					<img src="img/bc-Intro.png" class="bc-intro">
+			</section>
+
+			<section class="slide-two" data-background-transition="slide">
+				<h3>A Little About Me</h3>
 				<div class="lefty">
-					<h4>My last formal education was in 2009</h4>
+					<h4>Last Formal Degree: 2009</h4>
 					<ul>
 						<li>Master’s in Multimedia Journalism</li>
 						<li>Bachelor’s in Visual Communication</li>
@@ -39,7 +43,7 @@
 					</ul>
 				</div>
 				<div class="righty">
-					<h4>Tech Job Landscape in 2009</h4>
+					<h4>Tech Job Landscape: 2009</h4>
 					<ul>
 						<li>Web and mobile apps were relatively new</li>
 						<li>I and many others were working with Flash (outdated)</li>
@@ -49,10 +53,11 @@
 			</section>
 
 			<section>
-				<h3>Since Then</h3>
+				<h3>Since 2009</h3>
 				<div class="lefty">
-					<h4>2009 - 2014 (Multimedia and Web Design) </h4>
-					<p>Mostly making websites, videos and other media.</p>
+					<h4>2009 - 2014</h4>
+					<p>Job Title: Multimedia and Web Design</p>
+					<p>Description: Making websites, videos and other media.</p>
 					<ul>
 						<li>Flash</li>
 						<li>Photoshop / Illustrator</li>
@@ -64,8 +69,9 @@
 					</ul>
 				</div>
 				<div class="righty">
-					<h4>2014 - 2019 (User Experience Design)</h4>
-					<p>Mostly making prototypes for web and mobile apps.</p>
+					<h4>2014 - 2019</h4>
+					<p>Job Title: User Experience Design</p>
+					<p>Description: Making prototypes for web and mobile apps.</p>
 					<ul>
 						<li>Axure</li>
 						<li>Photoshop / Illustrator</li>
@@ -76,9 +82,9 @@
 			</section>
 
 			<section>
-				<h3>Decision: Time to Reboot my Skills</h3>
+				<h3>Time to Reboot my Skills</h3>
 				<div class="lefty">
-					<h4>Another Degree?</h4>
+					<h4>Another Degree</h4>
 					<p>Master’s or PHD</p>
 					<ul>
 						<li>Could accomplish over a three to four year period, attending part-time</li>
@@ -89,7 +95,7 @@
 					</ul>
 				</div>
 				<div class="righty">
-					<h4>Full Stack Coding Boot Camp</h4>
+					<h4>Full Stack Boot Camp</h4>
 					<p>An Accredited Certification from Georgia Tech</p>
 					<ul>
 						<li>Could accomplish over a six month period, attending part-time</li>
@@ -101,10 +107,10 @@
 			</section>
 
 			<section>
-				<h3>Why the Georgia Tech Coding Boot Camp?</h3>
+				<h3>Georgia Tech Coding Boot Camp</h3>
 				<div>
 					<p>There are many excellent full stack boot camps institutions to choose from.</p>
-					<p>What makes this one favorable?</p>
+					<h4>What makes this one favorable?</h4>
 					<ul>
 						<li>The cost is very compedative</li>
 						<li>They offer online or inperson options</li>
@@ -115,33 +121,26 @@
 			</section>
 
 			<section>
-				<h3>Comparing Boot Camps</h3>
+				<h3>Curriculumn: The Stack</h3>
 				<div>
-					<p>Many are for-profit, relatively young instatutions.</p>
-					<p>Why that makes me nervous?</p>
-					<ul>
-						<li>Credibility is hard to determine</li>
-						<li>Perminence is not garuanted</li>
-						<li>Recognition is ...</li>
-					</ul>
+					<p>MERN Stack: Mongo Express React Node</p>
+					<img src="img/mern.png" class="bc-intro">
 				</div>
 			</section>
 
 			<section>
-				<h3>Curriculumn: What is the Stack?</h3>
-				<div>
-					<p>MERN Stack: Mongo Express React Node</p>
-					<p>Why not MEAN Stack? Mongo Express Angular Node</p>
-					<ul>
-						<li>ReactJS is actually the most popular front-end framework</li>
-						<li>It's less perscriptive than Angular</li>
-						<li>Smaller learning curve</li>
-						<li>Prediction that it will increase in popularity</li>
-					</ul>
-					
-
-				</div>
-			</section>
+					<h3>Curriculumn: What is the Stack?</h3>
+					<div>
+						<p>MERN Stack: Mongo Express React Node</p>
+						<p>Why not MEAN Stack? Mongo Express Angular Node</p>
+						<ul>
+							<li>ReactJS is actually the most popular front-end framework</li>
+							<li>It's less perscriptive than Angular</li>
+							<li>Smaller learning curve</li>
+							<li>Prediction that it will increase in popularity</li>
+						</ul>
+					</div>
+				</section>
 
 			<section>Slide 2</section>
 		</div>
@@ -155,6 +154,13 @@
 		// - https://github.com/hakimel/reveal.js#configuration
 		// - https://github.com/hakimel/reveal.js#dependencies
 		Reveal.initialize({
+
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
 			dependencies: [
 				{ src: 'plugin/markdown/marked.js' },
 				{ src: 'plugin/markdown/markdown.js' },
@@ -162,6 +168,7 @@
 				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
 			]
 		});
+
 	</script>
 </body>
 
