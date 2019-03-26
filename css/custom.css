@@ -8,12 +8,11 @@
     width: 45%;
 }
 
-
-
 .reveal p {
     margin: 20px 0;
     line-height: 1.3;
     font-size: .5em;
+    color: orange;
 }
 
 .reveal h3 {
@@ -65,4 +64,15 @@ ul li::before {
     opacity: .1;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+}
+
+.reveal .slide-background-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(../img/code-1.png) no-repeat top left;
+    opacity: .05;
 }
